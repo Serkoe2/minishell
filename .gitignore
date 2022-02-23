@@ -1,0 +1,12 @@
+# objects & libs files
+*.o
+*.a
+
+minishell
+
+# self files
+TODO
+
+# VScode files
+.vscode/
+minishell.dSYM/
