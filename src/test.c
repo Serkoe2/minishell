@@ -6,7 +6,7 @@
 /*   By: cchekov <cchekov@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 18:17:28 by cchekov           #+#    #+#             */
-/*   Updated: 2022/02/23 20:09:41 by cchekov          ###   ########.fr       */
+/*   Updated: 2022/02/23 23:45:12 by cchekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 
 int main(int argc, char **argv){
     ft_putstr(">");
-    shell("echo 123");
+    shell("pwd");
     return (0);
 }

@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minishell.h                                        :+:      :+:    :+:   */
+/*   pwd_handler.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cchekov <cchekov@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/23 18:42:42 by cchekov           #+#    #+#             */
-/*   Updated: 2022/02/23 23:53:35 by cchekov          ###   ########.fr       */
+/*   Created: 2022/02/23 23:43:19 by cchekov           #+#    #+#             */
+/*   Updated: 2022/02/24 00:04:06 by cchekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINISHELL_H
-# define MINISHELL_H
-# include "../libft/libft.h"
-# include "../ft_printf/ft_printf.h"
-# include <stdlib.h>
-# include <sys/types.h>
-# include <dirent.h>
+#include "../headers/minishell.h"
 
-void	shell(char *commandLine);
-void	echo_handler(char **args);
-void    pwd_handler();
+void pwd_handler(){
+    char    *path;
+    
+    path = ft_calloc(256, sizeof(char));
+    path = getcwd(path, 256);
+    if (!path)
+        return ;
+    ft_printf("%s", path);
+    // DIR *dir;
+    // struct dirent *part;
 
-# endif
+    // dir = opendir(".");
+    // part = readdir(dir);
+    // ft_sprintf("%s", part->d_name);
+    // closedir(dir);
+}

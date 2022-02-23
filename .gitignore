@@ -4,8 +4,8 @@
 
 minishell
 
-# self files
-TODO
+# tests files
+Tests/
 
 # VScode files
 .vscode/

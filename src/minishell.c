@@ -6,7 +6,7 @@
 /*   By: cchekov <cchekov@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 19:01:56 by cchekov           #+#    #+#             */
-/*   Updated: 2022/02/23 19:57:21 by cchekov          ###   ########.fr       */
+/*   Updated: 2022/02/23 23:53:11 by cchekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void shell(char *commandLine){
     else if (!ft_strncmp(command[0], "cd", commandLen))
         ft_printf("%s",command[0]);
     else if (!ft_strncmp(command[0], "pwd", commandLen))
-        ft_printf("%s",command[0]);
+        pwd_handler();//ft_printf("%s",command[0]);
     else if (!ft_strncmp(command[0], "export", commandLen))
         ft_printf("%s",command[0]);
     else if (!ft_strncmp(command[0], "unset", commandLen))
