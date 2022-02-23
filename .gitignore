@@ -10,3 +10,6 @@ TODO
 # VScode files
 .vscode/
 minishell.dSYM/
+
+#MacOS files
+.DS_Store
