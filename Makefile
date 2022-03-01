@@ -5,7 +5,7 @@ PRINTF_DIR = ./ft_printf
 SRCS = src/*.c
 FLAGS = #-Wall -Wextra -Werror
 HEADERS = 
-INCLUDES = libft/libft.a ft_printf/libftprintf.a
+INCLUDES = libft/libft.a ft_printf/libftprintf.a -lreadline
 
 OBJS = ${SRCS:.c=.o}
 

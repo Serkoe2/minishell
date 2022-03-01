@@ -6,7 +6,7 @@
 /*   By: cchekov <cchekov@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 23:43:19 by cchekov           #+#    #+#             */
-/*   Updated: 2022/02/24 00:04:06 by cchekov          ###   ########.fr       */
+/*   Updated: 2022/02/24 00:15:33 by cchekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,4 @@ void pwd_handler(){
     if (!path)
         return ;
     ft_printf("%s", path);
-    // DIR *dir;
-    // struct dirent *part;
-
-    // dir = opendir(".");
-    // part = readdir(dir);
-    // ft_sprintf("%s", part->d_name);
-    // closedir(dir);
 }
